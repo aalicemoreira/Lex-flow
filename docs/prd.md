@@ -27,11 +27,14 @@ Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), esc
 * **Como Advogado**, eu quero **visualizar uma lista de tarefas pendentes** em um dashboard, para que eu possa priorizar os atendimentos do dia.
     - _Critérios de Aceitação:_ A tela deve mostrar um resumo visual de quantos clientes estão aguardando; os clientes mais recentes devem aparecer no topo da lista.
 * **Como Advogado**, eu quero **filtrar ou buscar tarefas por nome do cliente**, para localizar rapidamente um processo específico.
-    - _Critérios de Aceitação:_ 
-* **Como Usuário**, eu quero que o **layout seja adaptável para o meu celular**, para que eu possa consultar os prazos mesmo quando estiver fora do escritório.
     - _Critérios de Aceitação:_ A busca deve filtrar a lista conforme o usuário digita; os botões de filtroetc devem mostrar apenas os clientes daquela categoria específica.
+* **Como Usuário**, eu quero que o **layout seja adaptável para o meu celular**, para que eu possa consultar os prazos mesmo quando estiver fora do escritório.
+    - _Critérios de Aceitação:_ O menu deve ser fácil de clicar com o polegar; as informações da tabela não devem ficar "cortadas" ou escondidas na tela do celular.
 
 ### 📊 Épico 3: Persistência e Controle
 
-* **Como Administrador**, eu quero **excluir ou editar uma tarefa concluída**, para manter a lista de trabalhos atualizada e limpa.
+* **Como Administrador**, eu quero **excluir ou editar uma tarefa concluída** 
+   - _Critérios de Aceitação:_ para manter a lista de trabalhos atualizada e limpa.
+o clicar em editar, todos os dados do cliente devem voltar para o formulário.
 * **Como Usuário**, eu quero que meus **rascunhos fiquem salvos localmente**, para não perder as informações caso a página seja atualizada acidentalmente.
+   - _Critérios de Aceitação:_ Se a secretária fechar o navegador no meio de um cadastro longo, ao abrir novamente, o que ela já digitou deve estar lá nos campos.
