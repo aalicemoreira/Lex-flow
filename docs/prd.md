@@ -18,14 +18,18 @@ Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), esc
 ### 👤 Épico 1: Fluxo de Cadastro (Entrada)
 
 * **Como Secretária**, eu quero **cadastrar um novo lead** informando nome, telefone e CEP, para que os dados fiquem registrados no sistema e não se percam.
+    - _Critérios de Aceitação:_ O sistema não deve permitir salvar se o nome estiver em branco; o telefone deve aceitar apenas números e formatar automaticamente; após salvar, o formulário deve limpar para o próximo atendimento.
 * **Como Secretária**, eu quero que o **endereço seja preenchido automaticamente ao digitar o CEP**, para agilizar o atendimento inicial ao cliente.
-* **Como Secretária**, eu quero **validar os campos de e-mail e telefone** com máscaras e avisos, para garantir que o advogado consiga entrar em contato com o cliente depois.
+    - _Critérios de Aceitação:_ Ao terminar de digitar o CEP, os campos de Rua, Bairro e Cidade devem aparecer preenchidos; se o CEP não existir, o sistema deve avisar que o endereço precisará ser digitado manualmente.
 
 ###  Épico 2: Fluxo de Listagem e Gestão (Saída)
 
 * **Como Advogado**, eu quero **visualizar uma lista de tarefas pendentes** em um dashboard, para que eu possa priorizar os atendimentos do dia.
+    - _Critérios de Aceitação:_ A tela deve mostrar um resumo visual de quantos clientes estão aguardando; os clientes mais recentes devem aparecer no topo da lista.
 * **Como Advogado**, eu quero **filtrar ou buscar tarefas por nome do cliente**, para localizar rapidamente um processo específico.
+    - _Critérios de Aceitação:_ 
 * **Como Usuário**, eu quero que o **layout seja adaptável para o meu celular**, para que eu possa consultar os prazos mesmo quando estiver fora do escritório.
+    - _Critérios de Aceitação:_ A busca deve filtrar a lista conforme o usuário digita; os botões de filtroetc devem mostrar apenas os clientes daquela categoria específica.
 
 ### 📊 Épico 3: Persistência e Controle
 
