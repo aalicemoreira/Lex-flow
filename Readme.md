@@ -4,6 +4,12 @@ Autora: Alice Moreira dos Santos
 
 O projeto foi concebido para resolver o gargalo de comunicação entre a captação de clientes via tráfego pago e a distribuição dessas demandas para os advogados em um escritório de advocacia de pequeno porte.
 
+## 📚 Documentação do Projeto
+
+Para entender as regras de negócio, o escopo e a arquitetura técnica da aplicação, consulte os documentos abaixo:
+
+- [📄 Product Requirements Document (PRD)](./docs/prd.md) - Visão geral, atores e histórias de usuário.
+- [🛠️ Especificação Técnica (Tech Spec)](./docs/spec.md) - Diagrama de banco de dados (DER), dicionário de dados e rotas da API (JSON Server).
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
