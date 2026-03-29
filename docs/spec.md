@@ -7,21 +7,22 @@ Abaixo está a representação da estrutura do nosso banco de dados simulado (db
 
 ```mermaid
 erDiagram
-CLIENTE ||--o{ TRANSACAO : "realiza (e paga taxa)"
-CLIENTE {
+LEADS ||--o{ HISTORICO : "Possui"
+LEADS {
 string id PK "Gerado automaticamente"
-string nome
-string cpf "Usado para o login"
-string senha
-float saldo "Atualizado a cada operação"
+string nome "Nome completo do cliente"
+string telefone "Contato com máscara (00) 00000-0000"
+string cep "CEP para busca de endereço"
+string endereco "Logradouro, Bairro e Cidade"
+string status "Follow-up, Geladeira, Desqualificado ou Contrato"
+string cpf "Documento (preenchido na edição)"
+string descricao "Relato detalhado do caso jurídico"
 }
-TRANSACAO {
+HISTORICO {
 string id PK
-string clienteId FK "Vínculo com o Cliente"
-string tipo "DEPOSITO, SAQUE ou TAXA"
-float valor
+string LeadId FK "Vínculo com o ID do Lead"
 string data "Formato ISO (YYYY-MM-DD)"
-string descricao "Ex: 'Taxa de manutenção respiratória'"
+string alteração "Descrição da mudança de status"
 }
 ```
 
