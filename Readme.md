@@ -11,6 +11,10 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 - [📄 Product Requirements Document (PRD)](./docs/prd.md) - Visão geral, atores e histórias de usuário.
 - [🛠️ Especificação Técnica (Tech Spec)](./docs/spec.md) - Diagrama de banco de dados (DER), dicionário de dados e rotas da API (JSON Server).
 
+## 🌐 Site em Produção - GitHub Pages
+
+https://github.com/aalicemoreira/Lex-flow/
+
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
 #### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
