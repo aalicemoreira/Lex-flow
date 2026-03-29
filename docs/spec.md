@@ -6,23 +6,23 @@ Este documento detalha a arquitetura técnica, o modelo de dados e as integraç�
 Abaixo está a representação da estrutura do nosso banco de dados simulado (db.json) e como as entidades se conectam para permitir o histórico de atendimento.
 
 erDiagram
-LEADS ||--o {HISTORICO : "possui"
-LEADS {
-    string id PK "Gerado automaticamente pelo JSON Server"
-    string nome "Nome completo do cliente"
-    string telefone "Contato com máscara (00) 00000-0000"
-    string cep "CEP para busca de endereço"
-    string endereco "Logradouro, Bairro e Cidade"
-    string status "Follow-up, Geladeira, Desqualificado ou Contrato"
-    string cpf "Documento (preenchido na edição)"
-    string descricao "Relato detalhado do caso jurídico"
+CLIENTE ||--o{ TRANSACAO : "realiza (e paga taxa)"
+CLIENTE {
+string id PK "Gerado automaticamente"
+string nome
+string cpf "Usado para o login"
+string senha
+float saldo "Atualizado a cada operação"
 }
-HISTORICO {
-    string id PK
-    string leadId FK "Vínculo com o ID do Lead"
-    string data "Data do registro (ISO 8601)"
-    string alteracao "Descrição da mudança de status"
+TRANSACAO {
+string id PK
+string clienteId FK "Vínculo com o Cliente"
+string tipo "DEPOSITO, SAQUE ou TAXA"
+float valor
+string data "Formato ISO (YYYY-MM-DD)"
+string descricao "Ex: 'Taxa de manutenção respiratória'"
 }
+```
 
 ## 2. Dicionário de Dados
 
