@@ -41,10 +41,5 @@ Breve explicação das tabelas principais:
 Registra a linha do tempo de interações com o lead.
   - Id: Identificador único do evento de alteração.
   - LeadId: Chave estrangeira que conecta o histórico ao cliente específico.
-  - Alteração:Texto descrevendo o que mudou (Ex: "Cliente movido para Geladeira por falta de documentos"). 
-
-## 3. Rotas da API (JSON Server)
-
-
-## 4. Estrutura do Banco de Dados (db.json)
-
+  - Alteração:Texto descrevendo o que mudou (Ex: "Cliente movido para Geladeira por falta de documentos").
+  
