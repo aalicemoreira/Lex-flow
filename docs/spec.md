@@ -9,20 +9,19 @@ Abaixo está a representação da estrutura do nosso banco de dados simulado (db
 erDiagram
     LEADS ||--o{ HISTORICO : "possui"
     LEADS {
-        string id
-        string nome
-        string telefone
-        string cep
-        string endereco
-        string status
-        string cpf
-        string descricao
+        string id PK "Gerado automaticamente"
+        string nome "Nome completo do lead"
+        string telefone "Retorno no atendimento"
+        string cep "Gatilho para API ViaCEP"
+        string status "Follow-up, Geladeira, Desqualificado ou Contrato"
+        string cpf "Documento (adicionado na edição)"
+        string descricao "Relato detalhado do caso jurídico"
     }
     HISTORICO {
-        string id
-        string leadId
-        string data
-        string alteracao
+        string id PK "ID do evento"
+        string leadId FK "Vínculo com o Lead"
+        string data "Data da modificação"
+        string status_novo "Novo status definido"
     }
 ```
 
