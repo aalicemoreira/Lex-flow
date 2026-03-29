@@ -20,7 +20,7 @@ erDiagram
     HISTORICO {
         string id PK "ID do evento"
         string leadId FK "Vínculo com o Lead"
-        string data "Data da modificação"
+        string data "Formato ISO (YYYY-MM-DD)"
         string status_novo "Novo status definido"
     }
 ```
