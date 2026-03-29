@@ -20,8 +20,7 @@ Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), esc
 * **Como Secretária**, eu quero **cadastrar um novo lead** informando nome, telefone e CEP, para que os dados fiquem registrados no sistema e não se percam.
     - _Critérios de Aceitação:_ O sistema não deve permitir salvar se o nome estiver em branco; o telefone deve aceitar apenas números e formatar automaticamente; após salvar, o formulário deve limpar para o próximo atendimento.
 * **Como Secretária**, eu quero que o **endereço seja preenchido automaticamente ao digitar o CEP**, para agilizar o atendimento inicial ao cliente.
-    - _Critérios de Aceitação:_ Ao terminar de digitar o CEP, os campos de Rua, Bairro e Cidade devem aparecer preenchidos; se o CEP não existir, o sistema deve avisar que o endereço precisará ser digitado manualmente.
-
+    - _Critérios de Aceitação:_ O sistema deve realizar uma requisição assíncrona para a API pública ViaCEP assim que o campo de CEP for preenchido com 8 dígitos.
 ###  Épico 2: Fluxo de Listagem e Gestão (Saída)
 
 * **Como Advogado**, eu quero **visualizar uma lista de tarefas pendentes** em um dashboard, para que eu possa priorizar os atendimentos do dia.
