@@ -7,23 +7,23 @@ Abaixo está a representação da estrutura do nosso banco de dados simulado (db
 
 ```mermaid
 erDiagram
-LEADS ||--o{ HISTORICO : "Possui"
-LEADS {
-string id PK "Gerado automaticamente"
-string nome "Nome completo do cliente"
-string telefone "Contato com máscara (00) 00000-0000"
-string cep "CEP para busca de endereço"
-string endereco "Logradouro, Bairro e Cidade"
-string status "Follow-up, Geladeira, Desqualificado ou Contrato"
-string cpf "Documento (preenchido na edição)"
-string descricao "Relato detalhado do caso jurídico"
-}
-HISTORICO {
-string id PK
-string LeadId FK "Vínculo com o ID do Lead"
-string data "Formato ISO (YYYY-MM-DD)"
-string alteração "Descrição da mudança de status"
-}
+    LEADS ||--o{ HISTORICO : "possui"
+    LEADS {
+        string id
+        string nome
+        string telefone
+        string cep
+        string endereco
+        string status
+        string cpf
+        string descricao
+    }
+    HISTORICO {
+        string id
+        string leadId
+        string data
+        string alteracao
+    }
 ```
 
 ## 2. Dicionário de Dados
