@@ -14,14 +14,13 @@ erDiagram
         string telefone "Retorno no atendimento"
         string cep "Gatilho para API ViaCEP"
         string status "Follow-up, Geladeira, Desqualificado ou Contrato"
-        string cpf "Documento (adicionado na edição)"
         string descricao "Relato detalhado do caso jurídico"
     }
     HISTORICO {
         string id PK "ID do evento"
         string leadId FK "Vínculo com o Lead"
         string data "Formato ISO (YYYY-MM-DD)"
-        string status_novo "Novo status definido"
+        string alteração "Novo status definido"
     }
 ```
 
@@ -29,16 +28,18 @@ erDiagram
 
 Breve explicação das tabelas principais:
 
-- **Tabelas: leads** Responsável por armazenar os dados de autenticação e o saldo consolidado do usuário.
+- **Tabelas: leads** Esta é a tabela principal que armazena o dossiê de cada potencial cliente captado pela secretaria.
   - Id: Identificador único gerado pelo JSON Server (String ou Hash).
   - Nome: Nome do lead (obrigatório)
-  - Status: Define a fase no funil jurídico. Valores aceitos: Follow-up, Geladeira, Desqualificado, Contrato.
-  - Cep/Endereço:Dados de localização. O campo endereco é composto pelos dados retornados pela API externa.
+  - Telefone: Número de contato para retorno no atendimento.
+  - Cep: Dados de localização. O campo endereco é composto pelos dados retornados pela API externa.
+  - Status: Define a fase no funil jurídico. Valores aceitos: Follow-up, Geladeira, Desqualificado, Contrato
   - CPF: Campo opcional na entrada, obrigatório para fechamento de contrato.
   - Descrição: Campo de texto longo para o resumo do caso.
 
 - **Tabela: Historico** 
 Registra a linha do tempo de interações com o lead.
+  - Id: Identificador único do evento de alteração.
   - LeadId: Chave estrangeira que conecta o histórico ao cliente específico.
   - Alteração:Texto descrevendo o que mudou (Ex: "Cliente movido para Geladeira por falta de documentos"). 
 
