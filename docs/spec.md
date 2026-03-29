@@ -5,6 +5,7 @@ Este documento detalha a arquitetura técnica, o modelo de dados e as integraç�
 
 Abaixo está a representação da estrutura do nosso banco de dados simulado (db.json) e como as entidades se conectam para permitir o histórico de atendimento.
 
+```mermaid
 erDiagram
 CLIENTE ||--o{ TRANSACAO : "realiza (e paga taxa)"
 CLIENTE {
