@@ -14,10 +14,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 ## 🎨 Design
 
 - [🎨 Design System](./docs/design-system.md) - Identidade visual
-- [🖼️ Protótipo no Figma](## 🎨 Design
-
-- [🎨 Design System](./docs/design-system.md) - Identidade visual
-- [🖼️ Protótipo no Figma](https://www.figma.com/file/a1VDbO1aNfZyulQPxT99OE/beleza-em-dia?node-id=3%3A80) - Telas interativas da aplicação.
+- [🖼️ Protótipo no Figma](https://www.figma.com/design/HFW8ty6CJArZGIY8Apk4Dk/Lex-Flow---Primeira-vers%C3%A3o?node-id=0-1&t=nStAeVeLOOSIU005-1) - Telas interativas da aplicação.
 
 ## 🌐 Site em Produção - GitHub Pages
 
