@@ -49,4 +49,4 @@ Para garantir a compatibilidade de componentes e a correta interpretação por f
 - **Framework Front-end:** Bootstrap v5.3.8
 - **Biblioteca JavaScript:** jQuery v4.0.0
 - **API de Endereço:** ViaCEP API v1
-- **Servidor de Dados Local:** JSON Server.
+- **Servidor de Dados Local:** JSON Server v0.17.4
