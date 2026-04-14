@@ -41,5 +41,12 @@ Breve explicação das tabelas principais:
 Registra a linha do tempo de interações com o lead.
   - Id: Identificador único do evento de alteração.
   - LeadId: Chave estrangeira que conecta o histórico ao cliente específico.
-  - Alteração:Texto descrevendo o que mudou (Ex: "Cliente movido para Geladeira por falta de documentos").
-  
+  - Alteração:Texto descrevendo o que mudou (Ex: "Cliente movido para Geladeira por falta de documentos")
+
+## 3. Stack Tecnológico
+Para garantir a compatibilidade de componentes e a correta interpretação por ferramentas de IA (Cursor/Copilot), este projeto utiliza as seguintes tecnologias e versões:
+
+- **Framework Front-end:** Bootstrap v5.3.3
+- **Biblioteca JavaScript:** jQuery v3.7.1
+- **API de Endereço:** ViaCEP API v1
+- **Servidor de Dados Local:** JSON Server v0.17.

@@ -28,8 +28,8 @@ https://github.com/aalicemoreira/Lex-flow/
   - **JSON Server** - Para simular uma API REST.
 - **Integração:** API ViaCEP: Para a busca automática de endereços através do CEP.
 
-Escolhi o Materialize porque ele oferece um design moderno com linhas no estilo Google (Material Design) e já vem com componentes prontos. Isso garante que o sistema seja bonito e totalmente responsivo para rodar tanto no PC quanto no celular;
-Utilizei o jQuery porque ele facilita muito a manipulação do DOM e a criação de interações dinâmicas com poucas linhas de código. Com ele, consigo capturar eventos e atualizar as informações na tela de um jeito muito mais rápido e prático.
+Escolhi o Bootstrap porque ele é o framework mais popular do mercado e possui um sistema de grid incrível para organizar o layout. Ele garante que o sistema seja profissional, limpo e totalmente responsivo, funcionando bem em qualquer tamanho de tela.
+Também como o jQuery porque ele facilita muito a manipulação do DOM e a criação de interações dinâmicas com poucas linhas de código. Com ele, consigo capturar eventos e atualizar as informações na tela de um jeito muito mais rápido e prático.
 JSON server foi escolhida para simular uma API REST de verdade, transformando um arquivo JSON no nosso banco de dados. Ela permite testar o envio e a busca de dados de forma realista durante o desenvolvimento.
 Integrei a API do ViaCEP para automatizar o preenchimento de endereços no cadastro apenas com o número do CEP. Isso evita erros de digitação e melhora a experiência de quem está usando o sistema, deixando o processo muito mais profissional.
 
