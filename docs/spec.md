@@ -46,7 +46,7 @@ Registra a linha do tempo de interações com o lead.
 ## 3. Stack Tecnológico
 Para garantir a compatibilidade de componentes e a correta interpretação por ferramentas de IA (Cursor/Copilot), este projeto utiliza as seguintes tecnologias e versões:
 
-- **Framework Front-end:** Bootstrap v5.3.3
-- **Biblioteca JavaScript:** jQuery v3.7.1
-- **API de Endereço:** ViaCEP API v1
-- **Servidor de Dados Local:** JSON Server v0.17.
+- **Framework Front-end:** Bootstrap v5.3.8
+- **Biblioteca JavaScript:** jQuery v4.0.0
+- **API de Endereço:** ViaCEP API
+- **Servidor de Dados Local:** JSON Server.
